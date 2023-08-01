@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Codice Fiscale Italiano</title>
+      <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+
+<form name="FormCodFis" method="" action="" class="center">
+
+    
+    <h1>Codice Fiscale Italiano</h1>
+    <label for="Cognome">Cognome:</label><br>
+    <input type="text" id="Cognome" name="Cognome" onchange="CheckCognome()" class="voce5 rounded-input"><br>
+    <label for="Nome">Nome:</label><br>
+    <input type="text" id="Nome" name="Nome" onchange="CheckNome()" class="rounded-input"><br>
+    <label for="data" class="voce5">Data di Nascita:</label>
+    <input type="date" id="data" name="data" onchange="GetData()" >
+   <strong>Sesso</strong>
+                <select name="Sesso"value="" onChange="UpdateSesso()" class="voce5 rounded-input "   >
+                  <option selected value="0">M</option>
+                  <option value="1">F</option>
+                </select>
+    <label for="Luogo di Nascita">Luogo di Nascita:</label>
+     <select id="comuni" class="voce5 rounded-input "></select>
+    <p id="comb_comuni"></p>
+   <input name="Calcola" type="button" value=" Calcola " onclick="CalcolaCodiceFiscale()" class="voce5 rounded-button" >
+    <td>
+                <strong>Codice Fiscale</strong><input name="CodiceFiscale" size="22" value="" onchange="" readonly="" class="voce5 rounded-input ">
+              </td>
+              
+ <script language="JavaScript" src="script.js">
+<!-- alert("ATTENZIONE: Non posso caricare il programma!. Questo programma richiede un browser che supporti JavaScript."); //-->
+</script>
+
+</form>
+
+
+</body>
+</html>
